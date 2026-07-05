@@ -6,6 +6,7 @@ Streamlit‑дашборда.
 
 # АРХИТЕКТУРА ПРОЕКТА
 
+'''
 project/
 │
 ├── app.py                     # Streamlit‑дашборд
@@ -44,6 +45,7 @@ project/
 │
 └── runs_talc/
     └── best.pt                # обученная модель сегментации талька (U‑Net)
+'''
 
 
 # ВАЖНО перед запуском необходимо скачать папки dataset_ready, runs_cls, runs_talc с диска по ссылке 
