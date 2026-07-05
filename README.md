@@ -5,24 +5,11 @@ Streamlit‑дашборда.
 Все файлы лежат в одной директории.
 
 # АРХИТЕКТУРА ПРОЕКТА
-
-my-project/
-├── .github/              # Конфигурация CI/CD
-├── src/                  # Исходный код приложения
-│   ├── components/       # Переиспользуемые UI-компоненты
-│   ├── services/         # API-запросы и бизнес-логика
-│   ├── store/            # Глобальное состояние
-│   └── utils/            # Вспомогательные функции
-├── public/               # Статические файлы (изображения, шрифты)
-├── package.json          # Зависимости проекта
-└── README.md
-
-'''
 project/
-│
-├── app.py                     # Streamlit‑дашборд
-├── pdf_report.py              # Генерация PDF (DejaVuSans)
-├── DejaVuSans.ttf             # Unicode‑шрифт для PDF
+│                                                                                                                                                                                                                             
+├── app.py                     # Streamlit‑дашборд                                                                                                                                                                            
+├── pdf_report.py              # Генерация PDF (DejaVuSans)                                                                                                                                                                   
+├── DejaVuSans.ttf             # Unicode‑шрифт для PDF                                                                                                                                                                        
 │
 ├── pipeline.py                # Главный оркестратор инференса
 ├── infer.py                   # OreClassifier: тальк + сульфиды + morphology + domain_rules
@@ -56,7 +43,6 @@ project/
 │
 └── runs_talc/
     └── best.pt                # обученная модель сегментации талька (U‑Net)
-'''
 
 
 # ВАЖНО перед запуском необходимо скачать папки dataset_ready, runs_cls, runs_talc с диска по ссылке 
