@@ -5,7 +5,7 @@ Streamlit‑дашборда.
 Все файлы лежат в одной директории.
 
 # АРХИТЕКТУРА ПРОЕКТА
-project/
+project/                                                                                                                                                                                                                      
 │                                                                                                                                                                                                                             
 ├── app.py                     # Streamlit‑дашборд                                                                                                                                                                            
 ├── pdf_report.py              # Генерация PDF (DejaVuSans)                                                                                                                                                                   
