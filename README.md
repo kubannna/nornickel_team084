@@ -10,39 +10,39 @@ project/
 ├── app.py                     # Streamlit‑дашборд                                                                                                                                                                            
 ├── pdf_report.py              # Генерация PDF (DejaVuSans)                                                                                                                                                                   
 ├── DejaVuSans.ttf             # Unicode‑шрифт для PDF                                                                                                                                                                        
-│
-├── pipeline.py                # Главный оркестратор инференса
-├── infer.py                   # OreClassifier: тальк + сульфиды + morphology + domain_rules
-├── morphology.py              # Анализ сульфидов: connected components, elongation, доли normal/fine
-├── domain_rules.py            # Экспертная классификация руды
-├── segmentation_sulfide.py    # Сегментация сульфидов (Multi‑Otsu)
-├── talc_processor.py          # Детект талька по цвету
-├── tile.py                    # Нарезка панорам
-├── talk_sulfide_confidence.py # Обработка панорам, confidence, нормализация LAB
-│
-├── train_talc_unet.py         # Обучение U‑Net талька
-├── ore_classifier.py          # Обучение ResNet‑18 классификатора руды
-├── load_dataset.py            # Сборка датасета, сплиты, даталоадеры
-│
-├── dataloader.py              # Загрузчик изображений и масок
-├── augmentations.py           # Аугментации
-│
-├── inference_pipeline.py      # Пакетная обработка панорам
-├── report_generator.py        # Генерация CSV/TXT отчётов
-│
-├── active_learning.py         # Коррекция масок и пересчёт классов
-│
-├── dataset_ready/
-│   ├── images/                # 1179 JPG
-│   ├── masks_talc/            # 1179 PNG (42 размечены)
-│   └── metadata.csv           # классы руды
-│
-├── runs_cls/
-│   ├── best.pt                # обученная модель классификатора руды
-│   └── metrics.json           # метрики обучения (macro‑F1, loss, LR schedule)
-│
-└── runs_talc/
-    └── best.pt                # обученная модель сегментации талька (U‑Net)
+│                                                                                                                                                                                                                             
+├── pipeline.py                # Главный оркестратор инференса                                                                                                                                                                
+├── infer.py                   # OreClassifier: тальк + сульфиды + morphology + domain_rules                                                                                                                                  
+├── morphology.py              # Анализ сульфидов: connected components, elongation, доли normal/fine                                                                                                                         
+├── domain_rules.py            # Экспертная классификация руды                                                                                                                                                                
+├── segmentation_sulfide.py    # Сегментация сульфидов (Multi‑Otsu)                                                                                                                                                           
+├── talc_processor.py          # Детект талька по цвету                                                                                                                                                                       
+├── tile.py                    # Нарезка панорам                                                                                                                                                                              
+├── talk_sulfide_confidence.py # Обработка панорам, confidence, нормализация LAB                                                                                                                                              
+│                                                                                                                                                                                                                             
+├── train_talc_unet.py         # Обучение U‑Net талька                                                                                                                                                                        
+├── ore_classifier.py          # Обучение ResNet‑18 классификатора руды                                                                                                                                                       
+├── load_dataset.py            # Сборка датасета, сплиты, даталоадеры                                                                                                                                                         
+│                                                                                                                                                                                                                             
+├── dataloader.py              # Загрузчик изображений и масок                                                                                                                                                                
+├── augmentations.py           # Аугментации                                                                                                                                                                                  
+│                                                                                                                                                                                                                             
+├── inference_pipeline.py      # Пакетная обработка панорам                                                                                                                                                                   
+├── report_generator.py        # Генерация CSV/TXT отчётов                                                                                                                                                                    
+│                                                                                                                                                                                                                             
+├── active_learning.py         # Коррекция масок и пересчёт классов                                                                                                                                                           
+│                                                                                                                                                                                                                             
+├── dataset_ready/                                                                                                                                                                                                            
+│   ├── images/                # 1179 JPG                                                                                                                                                                                     
+│   ├── masks_talc/            # 1179 PNG (42 размечены)                                                                                                                                                                      
+│   └── metadata.csv           # классы руды                                                                                                                                                                                  
+│                                                                                                                                                                                                                             
+├── runs_cls/                                                                                                                                                                                                                 
+│   ├── best.pt                # обученная модель классификатора руды                                                                                                                                                         
+│   └── metrics.json           # метрики обучения (macro‑F1, loss, LR schedule)                                                                                                                                               
+│                                                                                                                                                                                                                             
+└── runs_talc/                                                                                                                                                                                                                
+    └── best.pt                # обученная модель сегментации талька (U‑Net)                                                                                                                                                  
 
 
 # ВАЖНО перед запуском необходимо скачать папки dataset_ready, runs_cls, runs_talc с диска по ссылке 
